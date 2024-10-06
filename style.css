@@ -8,30 +8,109 @@ body {
   min-height: 100%;
   min-width: 100%;
   background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
-}
-
-#main-content {
-  position: relative;
+  margin: 0; 
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: stretch; 
+  width: 300px; 
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s; 
+}
+
+#main-content:hover {
+  transform: scale(1.02); 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  transition: border 0.2s; 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: violet; 
+  outline: none;
+}
+
+input[type="submit"] {
+  background: pink;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s; 
+}
+
+input[type="submit"]:hover {
+  background: violet; 
+  transform: scale(1.05);
 }
 
 #list {
-  margin: 10px;
+  margin-top: 20px; 
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 15px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+li {
+  padding: 5px 0; 
+  border-bottom: 1px solid #ccc; 
+}
+
+button {
+  font-size: 14px; 
+  margin-top: 10px;
+  padding: 10px;
+  background: pink; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s; 
+}
+
+button:hover {
+  background: violet;
 }
