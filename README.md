@@ -7,8 +7,8 @@ An app that allows one to create a to-do list and also organise them based on im
 ******
 
 ## SCREENSHOTS
-- ![Screenshot 2023-03-10 at 3 18 17 PM](https://user-images.githubusercontent.com/62019551/224314212-22edcb5c-9bb7-4200-9243-6299b41e5fff.png)
-- ![Screenshot 2023-03-10 at 3 19 12 PM](https://user-images.githubusercontent.com/62019551/224314464-241b4b6e-e902-40d0-aafa-8efe357c73fa.png)
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
 
 
